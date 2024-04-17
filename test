@@ -1,0 +1,122 @@
+<div class="row">
+        <div class="content">
+          <p>
+            Enter your URL below to generate a QR Code and download the image.
+          </p>
+          <form>
+            <input type="url" placeholder="Enter URL" />
+            <select>
+              <option value="100">100 x 100</option>
+              <option value="200">200 x 200</option>
+              <option value="300" selected>300 x 300</option>
+              <option value="400">400 x 400</option>
+              <option value="500">500 x 500</option>
+              <option value="600">600 x 600</option>
+              <option value="700">700 x 700</option>
+            </select>
+            <button type="submit">Generate QR Code</button>
+          </form>
+        </div>
+        <div class="image">
+          <img src="img/img1.jpg" alt="" />
+          <a
+            class="image-source"
+            href="https://pl.freepik.com/darmowe-zdjecie/osoba-skanujaca-kod-qr-w-stolowce_23715064.htm#fromView=search&page=1&position=20&uuid=998ff7ea-a3a6-4854-b53b-1214b8865c7c"
+            >Obraz autorstwa freepik</a
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="content">
+          <div class="spinner"></div>
+        </div>
+        <div class="image"></div>
+      </div>
+    </div>
+
+    .image-source
+{
+    font-size: 8px;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.card
+{
+    min-height: 100vh; 
+    position: relative;    
+}
+header
+{
+    font-size: 1.5rem;
+    padding: 2rem;
+    width: 100%;
+    color: #fff;
+    background-color: #e01264;
+}
+.row
+{
+	display: flex;
+	align-items: center;  
+	flex-wrap: wrap-reverse; 	 
+    gap: 1rem;
+    margin-top: 3rem;
+    padding: 0 2%;
+}
+.row .content
+{
+	flex: 1 1 40rem;   
+    text-align: center;  
+}
+.row .content p
+{
+    font-size: 2rem;
+}
+.row .image
+{
+	flex: 1 1 40rem;
+    text-align: center;   
+}
+.row .image img
+{
+	width: 80%; 
+}
+input, select, button
+{
+    width: 80%;
+    padding: 1.5rem;
+    margin: 2rem;
+}
+button
+{
+    color: #fff;
+    background-color: #616161;
+}
+button:hover
+{
+    letter-spacing: .2rem;
+}
+.spinner
+{
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px dotted #86ceec;
+    border-left: 16px dotted #569cba;
+    border-right: 16px dotted #196d92;
+    border-bottom: 16px dotted #115777;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
+}
+@keyframes spin
+{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+
+
+@media (max-width: 809px)
+{
+     
+}

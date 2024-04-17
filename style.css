@@ -1,0 +1,122 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+}
+html
+{
+    font-size: 62.5%;
+}
+a
+{
+    color: inherit;
+    text-decoration: none;
+}
+header
+{
+    font-size: 1.5rem;
+    padding: 2rem;
+    width: 100%;
+    color: #fff;
+    background-color: #0b5d90;
+    position: relative;
+}
+.image-source
+{
+    font-size: 8px;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.row
+{
+	display: flex;
+	align-items: center;  
+	flex-wrap: wrap; 	 
+    gap: 2rem; 
+    margin-top: 3rem;
+}
+.row .content
+{
+	flex: 1 1 40rem;    
+    text-align: center;
+} 
+.row .image
+{
+	flex: 1 1 40rem;  
+    text-align: center; 
+}
+.row .image img
+{
+	width: 80%; 
+} 
+.row .image #qrcode img
+{
+    width: auto;
+    margin: 0 auto;
+}
+.row .content p
+{
+    font-size: 2rem;
+    padding: 0 2%;
+}
+input, select, button
+{
+    width: 80%;
+    padding: 1.5rem;
+    margin: 2rem;
+}
+button 
+{
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: #616161;
+}
+button:hover
+{
+    letter-spacing: .2rem;
+}
+.save-link-button
+{
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    color: #fff;
+    background-color: #bd0942;
+}
+.save-link-button:hover
+{
+    letter-spacing: .2rem;
+}
+.spinner-container
+{    
+    display: none;
+}
+.spinner-container span
+{
+    display: inline-block;
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+.spinner
+{
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px dotted #86ceec;
+    border-left: 16px dotted #569cba;
+    border-right: 16px dotted #2889b3;
+    border-bottom: 16px dotted #1c739b;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite; 
+    margin: 0 auto;
+}
+@keyframes spin
+{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}

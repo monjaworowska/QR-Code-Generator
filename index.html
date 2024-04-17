@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>QR Code Generator</title>
+  </head>
+  <body>
+    <div class="card">
+      <header>
+        <h1>QR Code Generator</h1>
+        <a
+          class="image-source"
+          href="https://pl.freepik.com/darmowe-zdjecie/osoba-skanujaca-kod-qr-w-stolowce_23715064.htm#fromView=search&page=1&position=20&uuid=998ff7ea-a3a6-4854-b53b-1214b8865c7c"
+          >Obraz autorstwa freepik</a
+        >
+      </header>
+      <div class="row">
+        <div class="image">
+          <div id="qrcode"></div>
+          <img src="img/img1.jpg" alt="" />
+          <div id="spinner-container" class="spinner-container">
+            <div id="spinner" class="spinner"></div>
+            <span>Loading...</span>
+          </div>
+        </div>
+        <div class="content">
+          <p>
+            Enter your URL below to generate a QR Code and download the image.
+          </p>
+          <form>
+            <input type="url" placeholder="Enter URL" id="url" />
+            <select id="size">
+              <option value="100" selected>100 x 100</option>
+              <option value="200">200 x 200</option>
+              <option value="300">300 x 300</option>
+              <option value="400">400 x 400</option>
+              <option value="500">500 x 500</option>
+              <option value="600">600 x 600</option>
+              <option value="700">700 x 700</option>
+            </select>
+            <button type="submit">Generate QR Code</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
